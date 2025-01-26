@@ -45,7 +45,9 @@ DB_PASSWORD=**your database password**
 
 ## Migration & Seeding
 Jalankan migrate:
+```shell
 php artisan migrate
+```
 
 ## Seeder
 5 Kursus & 10 Siswa Data Dump
