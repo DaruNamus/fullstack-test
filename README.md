@@ -7,17 +7,24 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## Installation Setup
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Setup
+Menggunakan Laragon sebagai pembuat web lokal dengan menambahkan dan mengupdate Apache & PHP di dalamnya.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Prasyarat
+- **Apache**: [httpd-2.4.62-240904-win64-VS17](https://www.apachelounge.com/download/VS17/binaries/httpd-2.4.62-240904-win64-VS17.zip)
+- **PHP**: [php-8.3.16-Win32-vs16-x64](https://windows.php.net/downloads/releases/php-8.3.16-Win32-vs16-x64.zip)
+
+## Penginstallan Apache
+1. Buka direktori `C:\laragon\bin\apache`
+2. Buat folder dengan nama versi Apache yang telah diunduh agar mudah dikenali
+3. Ekstrak seluruh file yang ada di dalam folder `Apache24` dari file `httpd....ZIP` yang telah diunduh ke folder yang telah dibuat
+
+## Penginstallan PHP
+1. Buka direktori `C:\laragon\bin\php`
+2. Buat folder dengan nama versi PHP yang telah diunduh agar mudah dikenali
+3. Ekstrak file `php....ZIP` yang telah diunduh ke folder yang telah dibuat
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
