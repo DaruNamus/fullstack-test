@@ -61,7 +61,7 @@ php artisan serve
 npm run dev
 ```
 3. Buka browser dan akses ke: 
-**http://localhost:8000**:(http://localhost:8000)
+[http://localhost:8000]:(http://localhost:8000)
 
 # Laravel Project Package Containt
 - Laravel Breeze LiveWire// Auth & Front-End
