@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-# Setup
+# Installation Requirement
 Menggunakan Laragon sebagai pembuat web lokal dengan menambahkan dan mengupdate Apache & PHP di dalamnya.
 
 ## Prasyarat
@@ -15,6 +15,7 @@ Menggunakan Laragon sebagai pembuat web lokal dengan menambahkan dan mengupdate 
 - **Apache**: [httpd-........-win64-VS17](https://www.apachelounge.com/download/VS17/)
 - **PHP**: [php-8.3.16-Win32-vs16-x64](https://windows.php.net/downloads/releases/php-8.3.16-Win32-vs16-x64.zip)
 
+# Laragon Setup
 ## Penginstallan Apache
 1. Buka direktori `C:\laragon\bin\apache`
 2. Buat folder dengan nama versi Apache yang telah diunduh agar mudah dikenali
@@ -28,6 +29,21 @@ Menggunakan Laragon sebagai pembuat web lokal dengan menambahkan dan mengupdate 
 2. Tambahkan atau aktifkan ekstensi berikut:
    **'extension=zip'**
 3. atau bisa dengan Right Click Laragon -> PHP -> Extension -> zip (buat jadi Checklist)
+
+# Website Setup
+## Edit .env
+1. Buka file `.env`
+2. Ganti nama database yang telah diatur di dalamnya dengan nama database yang diinginkan / sudah disiapkan
+
+## Migration & Seeding
+Jalankan migrate:
+php artisan migrate
+
+## Seeder
+Jalankan seeder:
+php artisan db:seed --class=KursusTableSeeder (5 Kursus Data Dump)
+php artisan db:seed --class=SiswaTableSeeder (10 Siswa Data Dump)
+
 # Menjalankan Website
 Buka 2 terminal Laragon
 1. Jalankan perintah berikut untuk menjalankan server:
@@ -37,12 +53,19 @@ Buka 2 terminal Laragon
 3. Buka browser dan akses ke `http://localhost:8000`
 
 # Laravel Project Package Containt
-- Laravel Breeze // Auth
-- Laravel PowerGrid // Table Content
+- Laravel Breeze LiveWire// Auth & Front-End
+- Laravel LiveWire PowerGrid // Table Content
 - maatwebsite/excel // Untuk Import Excel
 - barryvdh/laravel-dompdf // Export to PDF 
 - openspout/openspout // Export to Excel
 - etc.
+
+# Project Feature
+- Auth Login
+- Table Kursus & Table Siswa
+- Search Feature pada kedua Table (+)
+- Import & Export Excel
+- Export PDF
 
 ## Learning Laravel
 
