@@ -44,6 +44,7 @@ DB_PASSWORD=**your database password**
 ```
 
 ## Migration & Seeding
+# Migration
 Jalankan migrate:
 ```shell
 php artisan migrate
