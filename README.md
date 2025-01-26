@@ -40,17 +40,28 @@ Jalankan migrate:
 php artisan migrate
 
 ## Seeder
+5 Kursus & 10 Siswa Data Dump
 Jalankan seeder:
-php artisan db:seed --class=KursusTableSeeder (5 Kursus Data Dump)
-php artisan db:seed --class=SiswaTableSeeder (10 Siswa Data Dump)
+```shell
+php artisan db:seed --class=KursusTableSeeder
+```
+```shell
+php artisan db:seed --class=SiswaTableSeeder 
+```
 
 # Menjalankan Website
 Buka 2 terminal Laragon
 1. Jalankan perintah berikut untuk menjalankan server:
-   php artisan serve
+```shell
+php artisan serve
+```
+
 2. Jalankan perintah berikut untuk menjalankan proses build dan live reload:
-   npm run dev
-3. Buka browser dan akses ke `http://localhost:8000`
+```shell
+npm run dev
+```
+3. Buka browser dan akses ke: 
+**http://localhost:8000**:(http://localhost:8000)
 
 # Laravel Project Package Containt
 - Laravel Breeze LiveWire// Auth & Front-End
