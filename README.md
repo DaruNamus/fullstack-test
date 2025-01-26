@@ -11,7 +11,7 @@
 Menggunakan Laragon sebagai pembuat web lokal dengan menambahkan dan mengupdate Apache & PHP di dalamnya.
 
 ## Prasyarat
-- **Laragon**
+- Laragon
 - **Apache**: [httpd-........-win64-VS17](https://www.apachelounge.com/download/VS17/)
 - **PHP**: [php-8.3.16-Win32-vs16-x64](https://windows.php.net/downloads/releases/php-8.3.16-Win32-vs16-x64.zip)
 
@@ -27,7 +27,7 @@ Menggunakan Laragon sebagai pembuat web lokal dengan menambahkan dan mengupdate 
 ## Mengaktifkan Ekstensi PHP
 1. Buka file `php.ini` yang terdapat di dalam folder instalasi PHP
 2. Tambahkan atau aktifkan ekstensi berikut:
-   **'extension=zip'**
+   'extension=zip'
 3. atau bisa dengan Right Click Laragon -> PHP -> Extension -> zip (buat jadi Checklist)
 
 # Website Setup
