@@ -7,26 +7,42 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Installation Setup
-
 # Setup
 Menggunakan Laragon sebagai pembuat web lokal dengan menambahkan dan mengupdate Apache & PHP di dalamnya.
 
 ## Prasyarat
-- **Apache**: [httpd-2.4.62-240904-win64-VS17](https://www.apachelounge.com/download/VS17/binaries/httpd-2.4.62-240904-win64-VS17.zip)
+- **Laragon**
+- **Apache**: [httpd-........-win64-VS17](https://www.apachelounge.com/download/VS17/)
 - **PHP**: [php-8.3.16-Win32-vs16-x64](https://windows.php.net/downloads/releases/php-8.3.16-Win32-vs16-x64.zip)
 
 ## Penginstallan Apache
 1. Buka direktori `C:\laragon\bin\apache`
 2. Buat folder dengan nama versi Apache yang telah diunduh agar mudah dikenali
-3. Ekstrak seluruh file yang ada di dalam folder `Apache24` dari file `httpd....ZIP` yang telah diunduh ke folder yang telah dibuat
-
+3. Ekstrak seluruh file yang ada di dalam folder `Apache24` dari file `httpd... .ZIP` yang telah diunduh ke folder yang telah dibuat
 ## Penginstallan PHP
 1. Buka direktori `C:\laragon\bin\php`
 2. Buat folder dengan nama versi PHP yang telah diunduh agar mudah dikenali
-3. Ekstrak file `php....ZIP` yang telah diunduh ke folder yang telah dibuat
+3. Ekstrak file `php... .ZIP` yang telah diunduh ke folder yang telah dibuat
+## Mengaktifkan Ekstensi PHP
+1. Buka file `php.ini` yang terdapat di dalam folder instalasi PHP
+2. Tambahkan atau aktifkan ekstensi berikut:
+   **'extension=zip'**
+3. atau bisa dengan Right Click Laragon -> PHP -> Extension -> zip (buat jadi Checklist)
+# Menjalankan Website
+Buka 2 terminal Laragon
+1. Jalankan perintah berikut untuk menjalankan server:
+   php artisan serve
+2. Jalankan perintah berikut untuk menjalankan proses build dan live reload:
+   npm run dev
+3. Buka browser dan akses ke `http://localhost:8000`
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+# Laravel Project Package Containt
+- Laravel Breeze // Auth
+- Laravel PowerGrid // Table Content
+- maatwebsite/excel // Untuk Import Excel
+- barryvdh/laravel-dompdf // Export to PDF 
+- openspout/openspout // Export to Excel
+- etc.
 
 ## Learning Laravel
 
