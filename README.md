@@ -34,6 +34,14 @@ Menggunakan Laragon sebagai pembuat web lokal dengan menambahkan dan mengupdate 
 ## Edit .env
 1. Buka file `.env`
 2. Ganti nama database yang telah diatur di dalamnya dengan nama database yang diinginkan / sudah disiapkan
+```shell
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=**your database name**
+DB_USERNAME=**your database user**
+DB_PASSWORD=**your database password**
+```
 
 ## Migration & Seeding
 Jalankan migrate:
@@ -61,7 +69,7 @@ php artisan serve
 npm run dev
 ```
 3. Buka browser dan akses ke: 
-[http://localhost:8000]:(http://localhost:8000)
+http://localhost:8000
 
 # Laravel Project Package Containt
 - Laravel Breeze LiveWire// Auth & Front-End
